@@ -1,0 +1,284 @@
+html {
+ font-size: 62.5%;
+}
+
+body {
+ font-size: 1.4rem;
+ font-family: 'Arial', 'メイリオ', sans-serif;
+ color: #24292E;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #24292E;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  border: solid #2A2A2A 1px;
+  padding: 13px 35px;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* header */
+#header {
+  height: 100vh;
+  background-image: url(../img/main.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/* magazine */
+#magazine {
+  padding: 80px 0;
+}
+
+.archive-new {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.magazine-item {
+  width: 49%;
+  position: relative;
+}
+
+.magazine-text {
+  max-width: 290px;
+  margin: 0 auto;
+  background: #707070;
+  opacity: .5;
+  color: #fff;
+  text-align: center;
+  padding: 16px 33px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+
+.magazine-text h3 {
+  font-size: 2rem;
+}
+
+/* fashion */
+#fashion {
+  height: 520px;
+  background-image: url(../img/fa.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#fashion .section-title {
+  padding-top: 60px;
+}
+
+/* catalog&antique */
+.books{
+  padding: 60px 0;
+  background: #F5F5F5;
+}
+
+#catalog,
+#antique {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.books img,
+.catalog-text,
+.antique-text {
+  width: 49%;
+
+}
+
+.books p {
+  margin-bottom: 30px;
+}
+
+.books .section-title {
+  margin-bottom: 40px;
+}
+
+#catalog {
+  margin-bottom: 120px;
+}
+
+#antique .btn {
+  margin-top: 30px;
+}
+
+/* footer */
+footer{
+  background: rgb(33, 19, 82);
+  color: #fff;
+  padding-top: 100px;
+}
+
+footer .info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+footer .info {
+  width: 28%;
+}
+
+.footer-logo {
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+
+.info .title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+
+.info li,
+.info .text {
+  font-size: 1.2rem;
+}
+
+.info li:before {
+  content:'-';
+  margin-right: 5px;
+}
+
+.copy {
+  display: block;
+  background: #fff;
+  color: #24292E;
+  text-align: center;
+  padding: 30px 0 25px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  /* タブレット版 */
+  /* magazine */
+  .magazine-text {
+    max-width: 250px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* スマホ版 */
+  #header {
+    margin-bottom: 0;
+  }
+  /* magazine */
+  .archive-new {
+    flex-direction: column;
+    padding: 0;
+  }
+  .magazine-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* カタログとか */
+  #catalog,
+  #antique {
+    flex-direction: column;
+  }
+
+  .books img,
+  .catalog-text,
+  .antique-text {
+    width: 100%;
+  }
+
+  #antique img {
+    order: 1;
+  }
+
+  .antique-text {
+    order: 2;
+  }
+
+  .books .section-title {
+    padding-top: 20px;
+  }
+
+  #catalog {
+    margin-bottom: 0;
+  }
+
+  /* footer */
+  footer {
+    padding-top: 30px;
+  }
+  footer .info-item {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  footer .info {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  footer .footer-logo {
+    margin: 0 auto;
+  }
+
+
+
+}
+
